@@ -1,0 +1,63 @@
+:root {
+    --dark: rgb(0, 0, 57);
+    --light: rgb(253, 237, 220);
+    --turqoise: rgb(64,224,208);
+    --dark-turquoise: rgb(0,206,209);
+    --hot-pink: rgb(255, 16, 240);
+    --navy-blue: rgb(0, 0, 128);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 { 
+    font-size: 1.5rem;
+}
+
+header {
+    width: 96%;
+    margin: 0 auto;
+    padding: 2.5rem;
+    text-align: left;
+}
+
+nav {
+    padding: 2.5rem;
+    text-align: right;
+    text-size-adjust: 60%;
+    background-color: var(--navy-blue);
+}
+
+li {
+    margin-left: 2rem;
+    display: inline;
+}
