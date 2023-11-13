@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.75rem;
     line-height: 1.5;
     color: var(--light);
@@ -48,11 +48,18 @@ header {
     margin: 0 auto;
     padding: 2.5rem;
     text-align: left;
+    position: absolute;
+    top: -25px;
+    max-width: 500px;
+    z-index: 1;
 }
 
 nav {
     padding: 2.5rem;
     text-align: right;
+    position: relative;
+    top 2.5rem;
+    right: 0;
     text-size-adjust: 60%;
     background-color: var(--navy-blue);
 }
@@ -60,4 +67,40 @@ nav {
 li {
     margin-left: 2rem;
     display: inline;
+}
+
+a:link {
+    color: var(--light);
+}
+
+a:visited {
+    color: var(--light);
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+.article-about #about_me {
+    display:flex;
+    flex-direction: column;
+    max-width: 640px;
+    font-family: arial, helvetica, sans-serif;
+}
+
+.article-about #about_me li {
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width:600px) {
+    body {
+        max-width: 100%;
+        display: block;
+    }
+
+    header {
+        position: relative;
+        background-color: var(--navy-blue);
+    }
+   
 }
