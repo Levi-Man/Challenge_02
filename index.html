@@ -10,50 +10,53 @@
 
 
 <body>
+    <a id="top"></a>
     <header>
         <h1 class="header-name">Indra Levi Manahan</h1>
+        <nav>
+            <h2 class="nav-buttons">
+            <ul>
+                <li><a href="#work-header">WORK</a></li>
+                <li><a href="#about-header">ABOUT</a></li>            
+                <li><a href="#contact_me">CONTACT</a></li>
+            </ul>
+            </h2>
+        </nav>
     </header>
-    <nav>
-        <h2 class="nav-buttons">
-        <ul>
-            <li><a href="#work-sample-01">WORK</a></li>
-            <li><a href="#about-header">ABOUT</a></li>            
-            <li><a href=".contact-link">CONTACT</a></li>
-        </ul>
-        </h2>
-    </nav>
 
     <main>
         <article class="article-work">
-            <section id="work-sample-01">
-                <h2 id="work-header">
-                    Work
-                </h2>
-                <img src="./Resources/###" alt="Static Image of first deployed website">
+            <h2 id="work-header">
+                WORK
+            </h2>
+            <section class="work-sample-01">               
+                <a href="https://levi-man.github.io/prework-study-guide/"><img id="prework" src="./Resources/Images/Prework.png" alt="Static Image of first deployed website"></a>
                 <h3><a href="https://levi-man.github.io/prework-study-guide/">First deployed website</a></h3>
             </section>    
-
-            <section id="work-sample-02">
-                <img src="./Resources/###" alt="Static image of CSS cheatsheet">
+            <div class="lower-work">
+            <section class="work-sample-02">
+                <a class="imageAtag" href="https://levi-man.github.io/mini_project_02/"><img id="cheatsheet" src="./Resources/Images/CSS_Cheatsheet.png" alt="Static image of CSS cheatsheet"></a>
                 <h3><a href="https://levi-man.github.io/mini_project_02/">CSS Cheatsheet</a>
                 </h3>            
             </section>  
 
-            <section id="work-sample-03">
-                <img src="./Resources/###" alt="Static Image of mini-project-01">
+            <section class="work-sample-03">
+                <a class="imageAtag" href="https://levi-man.github.io/git-init-sample/"><img id="personal" src="./Resources/Images/Personal_page.png" alt="Static Image of mini-project-01"></a>
                 <h3><a href="https://levi-man.github.io/git-init-sample/">Mini Project from SCS Bootcamp</a></h3>
             </section>   
 
-            <section id="work-sample-04">
-                <img src="./Resources/###" alt="Static Image of challenge_01">
+            <section class="work-sample-04">
+                <a class="imageAtag" href="https://levi-man.github.io/Challenge_01/Develop/"><img id="horiseon" src="./Resources/Images/Challenge_01.png" alt="Static Image of challenge_01"></a>
                 <h3><a href="https://levi-man.github.io/Challenge_01/Develop/">Challenge 01 from SCS Bootcamp</a></h3>
             </section>  
+            </div>
         </article>
     
         <article class="article-about">
             <h2 id="about-header">
-                About Me
+                ABOUT ME
             </h2>
+            <div id="about-section">
             <ul id="about_me">
                 <li>Hey there! I'm Indra Levi Manahan, living life in Cambridge, ON. Here's a bit about my journey so far:</li>
 
@@ -89,7 +92,24 @@
 
                 <li>That's a bit about me—always up for a chat or collaboration. Let's connect and share stories!</li>
             </ul>
+            <img id="self-portrait" src="./Resources/Images/self.jpg">
+            </div>
         </article>
+
+        <article class="article-contact">
+            <h3>CONTACT ME</h3>
+            <ul id="contact_me">
+                <li>Indra Levi Manahan</li>
+                <li>Phone: +1 (226) 899 9945</li>
+                <li><a href="mailto:indra.levi.manahan@gmail.com">email: indra.levi.manahan@gmail.com</a></li>
+            </ul>
+        </article>
+
     </main>
+
+    <footer>
+        © 2023 Indra Levi Manahan<br>
+        <a href="#top">Back to top</a>
+    </footer>
 </body>
 </html>

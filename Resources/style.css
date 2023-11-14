@@ -24,11 +24,11 @@ h1 {
 }
 
 h2 {
-    font-size: 3.5rem;
+    font-size: 2rem;
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 1.75rem;
 }
 
 h4 {
@@ -44,24 +44,33 @@ h6 {
 }
 
 header {
-    width: 96%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
     padding: 2.5rem;
-    text-align: left;
-    position: absolute;
-    top: -25px;
-    max-width: 500px;
-    z-index: 1;
+    /* max-width: 100%; */
+    background-color: var(--navy-blue);
 }
 
 nav {
     padding: 2.5rem;
     text-align: right;
+    font-size: 2rem;
     position: relative;
-    top 2.5rem;
+    top: 2.5rem;
     right: 0;
     text-size-adjust: 60%;
-    background-color: var(--navy-blue);
+}
+
+nav a:hover {
+    flex-basis: 1;
+    padding: .5rem;
+    color: var(--navy-blue);
+    background-color: var(--dark-turquoise);
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
 }
 
 li {
@@ -81,6 +90,67 @@ a:link, a:visited {
     text-decoration: none;
 }
 
+#work-header {
+    margin-left: 2rem;
+}
+
+#prework {
+    max-width: 80%;
+    border-radius: 20px;
+}
+
+#prework:hover {
+    max-width: 85%;
+}
+
+#cheatsheet, #personal, #horiseon {
+    border-radius: 15px;
+    max-width: 75%;
+}
+
+#self-portrait {
+    max-width: 45%;
+}
+
+.work-sample-01 {
+    text-align: center;
+}
+
+.work-sample-02, .work-sample-03, .work-sample-04 {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    min-width: 33%;
+    max-width: 100%;
+}
+
+.article-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-work .work-sample-01 h3 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.imageAtag {
+    display: flex;
+    justify-content: center;
+}
+
+.imageAtag:hover {
+    width: 110%;
+}
+
+div.lower-work {
+   display: flex;
+   flex-direction: row; 
+   justify-content: center;            
+}
+
 .article-about #about_me {
     display:flex;
     flex-direction: column;
@@ -88,11 +158,25 @@ a:link, a:visited {
     font-family: arial, helvetica, sans-serif;
 }
 
+div #about-section {
+    display:inline;
+}
 .article-about #about_me li {
     margin-bottom: 2rem;
 }
 
-@media only screen and (max-width:600px) {
+.article-contact {
+    display: block;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+    background-color: var(--navy-blue);
+}
+
+.article-contact h3 {
+    margin-left: 2rem;
+}
+
+@media only screen and (max-width:300px) {
     body {
         max-width: 100%;
         display: block;
@@ -103,4 +187,13 @@ a:link, a:visited {
         background-color: var(--navy-blue);
     }
    
+    nav {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:756px) {
+    div.lower-work {
+        display:block;
+    }
 }
