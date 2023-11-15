@@ -176,6 +176,7 @@ div #about-section {
     margin-left: 2rem;
 }
 
+
 @media only screen and (max-width:300px) {
     body {
         max-width: 100%;
@@ -197,3 +198,4 @@ div #about-section {
         display:block;
     }
 }
+
